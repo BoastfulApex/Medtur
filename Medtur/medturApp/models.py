@@ -19,6 +19,7 @@ class Clinics(models.Model):
     open_date = models.TimeField(auto_now_add=False, null=True, blank=True)
     close_date = models.TimeField(auto_now_add=False, null=True, blank=True)
     rate = models.FloatField(default=0)
+    booking = models.URLField(max_length=500, null=True)
 
     def __str__(self):
         return self.name

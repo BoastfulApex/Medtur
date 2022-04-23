@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qwk$1)iffg%4@d#0!ueo%y9r_(ipo$oxzye1m$q%(!z1hvfp*$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -85,10 +85,10 @@ WSGI_APPLICATION = 'Medtur.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'Medtur',
-        'USER': 'postgres',
-        'PASSWORD': 'Cilver25',
-        'HOST': 'localhost',
+        'NAME': 'd8o13i01s1h4kr',
+        'USER': 'ztdthnxefespiw',
+        'PASSWORD': 'f3e504c7fadeea8849f3de61c79fc63af0bf7fd910ea1e1f6fcd5a058be0a538',
+        'HOST': 'ec2-3-223-213-207.compute-1.amazonaws.com',
         'PORT': '5432'
     }
 }
