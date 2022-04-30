@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qwk$1)iffg%4@d#0!ueo%y9r_(ipo$oxzye1m$q%(!z1hvfp*$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["192.168.43.125", "0.0.0.0"]
 
 
 # Application definition
@@ -83,17 +83,17 @@ WSGI_APPLICATION = 'Medtur.wsgi.application'
 # }
 #
 DATABASES = {
-    'default': {
+   'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'd8o13i01s1h4kr',
         'USER': 'ztdthnxefespiw',
-        'PASSWORD': 'f3e504c7fadeea8849f3de61c79fc63af0bf7fd910ea1e1f6fcd5a058be0a538',
+       'PASSWORD': 'f3e504c7fadeea8849f3de61c79fc63af0bf7fd910ea1e1f6fcd5a058be0a538',
         'HOST': 'ec2-3-223-213-207.compute-1.amazonaws.com',
         'PORT': '5432'
     }
 }
 # Password validation
-# https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
+ #https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -129,6 +129,8 @@ import os
 
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
 MEDIA_URL = '/files/'
 MEDIA_ROOT =os.path.join(BASE_DIR, 'files')
 
